@@ -1,6 +1,10 @@
 header {
     margin-bottom: 3vh;
-    color: #ff686b;
+    color: white;
+}
+
+input {
+    text-align: right;
 }
 
 body {
@@ -9,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #ffa69e;
 }
 
 #calculator {
@@ -22,6 +27,7 @@ body {
     justify-content: space-between;
     background-color: #ffffff;
     border-radius: 25px;
+    box-shadow: .8em .3em 0.4em grey;
 }
 
 .row {
@@ -55,17 +61,38 @@ body {
     border-radius: .6em;
     text-align: center;
     font-size: 16px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .input-button:hover {
     background-color: #84dcc6;
 }
 
+.neg-button {
+    background-color: #ffa69e;
+    color: white;
+    border: none;
+    margin: .2em;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: .6em;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.5s ease;
+}
+
+.neg-button:hover {
+    background-color: #84dcc6;
+}
+
 .bottomrow {
     height: 1rem;
-    width: 10rem;
-    margin-bottom: 3rem;
+    width: 6.3rem;
+    margin-bottom: 2rem;
     text-align: center;
     background-color: #ffc857;
+}
+
+#cursor {
+    font-size: 30px;
 }

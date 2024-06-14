@@ -18,45 +18,48 @@
 
     <main id="calculator">
         <section class="row">
-            <input aria-label="display" id="display" value="0" readonly></input>
-            <button aria-label="Number seven" class="input-button num" value="7" type="button"
+            <input aria-label="display" id="display" value="0" type="text" onchange="myFunction()" readonly></input>
+            <button aria-label="Number seven" class="input-button" value="7" type="button"
                 onclick="addNumber(7)">7</button>
-            <button aria-label="Number eight" class="input-button num" value="8" type="button"
+            <button aria-label="Number eight" class="input-button" value="8" type="button"
                 onclick="addNumber(8)">8</button>
-            <button aria-label="Number nine" class="input-button num" value="9" type="button"
+            <button aria-label="Number nine" class="input-button" value="9" type="button"
                 onclick="addNumber(9)">9</button>
             <button aria-label="Addition sign" class="input-button symbol" value="+" type="button"
                 onclick="addOperator('+')">+</button>
-            <button aria-label="Number four" class="input-button num" value="4" type="button"
+            <button aria-label="Number four" class="input-button" value="4" type="button"
                 onclick="addNumber(4)">4</button>
-            <button aria-label="Number five" class="input-button num" value="5" type="button"
+            <button aria-label="Number five" class="input-button" value="5" type="button"
                 onclick="addNumber(5)">5</button>
-            <button aria-label="Number six" class="input-button num" value="6" type="button"
+            <button aria-label="Number six" class="input-button" value="6" type="button"
                 onclick="addNumber(6)">6</button>
-            <button aria-label="Subtraction sign" class="input-button symbol" value="-" type="button"
+            <button aria-label="Subtraction sign" class="input-button" value="-" type="button"
                 onclick="addOperator('-')">-</button>
-            <button aria-label="Number one" class="input-button num" value="1" type="button"
+            <button aria-label="Number one" class="input-button" value="1" type="button"
                 onclick="addNumber(1)">1</button>
-            <button aria-label="Number two" class="input-button num" value="2" type="button"
+            <button aria-label="Number two" class="input-button" value="2" type="button"
                 onclick="addNumber(2)">2</button>
-            <button aria-label="Number three" class="input-button num" value="3" type="button"
+            <button aria-label="Number three" class="input-button" value="3" type="button"
                 onclick="addNumber(3)">3</button>
-            <button aria-label="Multiplication sign" class="input-button symbol" value="*" type="button"
+            <button aria-label="Multiplication sign" class="input-button" value="*" type="button"
                 onclick="addOperator('*')">*</button>
-            <button aria-label="Number zero" class="input-button num" value="0" type="button"
+            <button aria-label="Number zero" class="input-button" value="0" type="button"
                 onclick="addNumber(0)">0</button>
-            <button aria-label="Decimal point" class="input-button symbol" value="." type="button"
-                onclick="addDecimal()">.</button>
-            <button aria-label="Delete last number" class="input-button symbol" value="Backspace" type="button"
-                onclick="deleteLast()">&lt;</button>
-            <button aria-label="Division sign" class="input-button symbol" value="/" type="button"
+            <button aria-label="Decimal point" class="input-button" value="." type="button"
+                onclick="addDecimal()">&nbsp;.</button>
+            <button aria-label="Negative sign" class="neg-button" value="" type="button" onclick="negative()">+ /
+                -</button>
+            <button aria-label="Division sign" class="input-button" value="/" type="button"
                 onclick="addOperator('/')">/</button>
             <button aria-label="Clear All" class="input-button bottomrow" value=" " type="button"
                 onclick="clearAll()">AC</button>
+            <button aria-label="Delete last number" class="input-button bottomrow" value="Backspace" type="button"
+                onclick="deleteLast()">DEL</button>
             <button aria-label="Equals sign" class="input-button bottomrow" value="Enter" type="button"
-                onclick="equals()">&nbsp;&nbsp;=&nbsp;&nbsp;</button>
+                onclick="equals()">=</button>
         </section>
 
+        <p id="demo" value="on"></p>
     </main>
 </body>
 
