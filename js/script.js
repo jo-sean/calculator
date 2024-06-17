@@ -47,8 +47,6 @@ let display = document.getElementById("display"),
         prevOperator: null
     };
 
-
-
 function setDisplayValue(val = "0") { display.value = val; };
 
 function setFirstnum(num) { operationArray.firstNum = num; };
@@ -58,7 +56,6 @@ function setFlag(boolVal) { operationArray.sequenceFlag = boolVal; };
 function setOperator(operator) { operationArray.operatorSymbol = operator; };
 
 function setPrevOperator(operator) { operationArray.prevOperator = operator; };
-
 
 // Adds numbers to display.value
 function addNumber(number) {
