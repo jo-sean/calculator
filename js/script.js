@@ -184,9 +184,3 @@ window.addEventListener('keydown', function (event) {
     const key = document.querySelector(`button[value='${press}']`);
     key.click();
 });
-
-
-function myFunction() {
-    let text = document.getElementById("display").value;
-    document.getElementById("demo").innerHTML = "You wrote: " + text;
-};
