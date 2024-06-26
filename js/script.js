@@ -146,7 +146,7 @@ function deleteLast() {
     if (display.value.length > 0 && !display.value.includes("-")) {
         setDisplayValue(display.value.slice(0, -1));
 
-        if (display.value) { setFirstnum(display.value); }
+        if (display.value && !operationArray.firstNum) { setFirstnum(display.value); }
 
     } else if (display.value.length === 2 && display.value.includes("-")) {
         setDisplayValue();
